@@ -207,3 +207,10 @@ color: black;
 .itemsImage{
 	margin-bottom: 1.2em;
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 15% 0 15%;
+    padding-bottom: 3em;
+    padding-top: 0.8em;
+}
