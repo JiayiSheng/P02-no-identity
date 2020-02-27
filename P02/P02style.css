@@ -1,0 +1,179 @@
+
+*{
+	box-sizing: content-box;
+	font-family: 'Raleway', sans-serif;
+	padding: 0em;
+	margin: 0em;
+}
+body{
+	background-color: #F5F5F5;
+}
+h1{
+	font-size: 2.5em;
+	text-align: center;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	padding: 1em 2em;
+	margin-top:1em; 
+}
+#logo{
+	color: #817870;
+	font-size: 1.6em;
+	color: black;
+	border: none;
+}
+#logo a{
+	color: #817870;	
+}
+nav a {
+	font-size: 0.8em;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0.8em;
+	padding-right:0.4em; 
+	border-right: solid #817870 0.1em;
+}
+
+nav a:hover{
+	text-decoration:underline;
+	color: #E3DCD2;
+}
+
+#logo:hover{
+	color: black;
+	text-decoration: none;
+}
+#cart,#about{
+	border: none;
+}
+#cart{
+	font-size: 1em;
+}
+header{
+	background-image: url("image/bgimg.jpg");
+	background-size:cover;
+	background-position: center center;
+	height:60vw;
+	margin-top:2em; 
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 8em;
+}
+header p{
+	color: #F5F5F5;
+	margin: 1.6em;
+
+}
+header h1{
+	color: #F5F5F5;
+	font-weight: normal;
+
+}
+.header-btn a{
+	background-color:white;
+
+	padding:0.8em 6.2em;
+	text-decoration:none;
+	color: black;
+	transition: all 1s;
+}
+.header-btn a:hover{
+	color: black;
+	background-color:#E3DCD2EE;
+}
+.header-btn{
+	margin-top: 1em;
+}
+
+.sectionbox{
+	margin: 5em 3em 4em 3em;
+	padding-bottom: 2em;
+	border-bottom: #E3DCD2EE solid 0.1em;  
+}
+
+img:hover{ 
+	background-color: #E1EFF2;
+	opacity: 0.7; 
+}
+
+.product-item{
+
+		display: flex;
+  /*flex-direction: row;*/
+  justify-content:center;
+
+}
+.product-item>div{
+	flex-basis: 30%;
+	margin:0 2rem;
+}
+.product-item img{
+	width:100%;
+}
+h2{
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 5em;
+	color: #817870;
+}
+#HomepageH2{
+	margin-bottom: 2em;
+}
+#p-category{
+	text-align: center;
+	margin-bottom: 6em;
+	font-size: 0.8em;
+}
+
+.items p{
+	font-size: 0.8em;
+	margin-top: 1.5em;
+}
+
+.event-main{
+	display:flex;
+	justify-content: center;
+	padding-left: 15em;
+	align-items: center;
+	margin: auto;
+}
+
+.event-left{
+	flex-basis: 40%;
+	margin: 3em;
+}
+
+.event-right img{
+	width:80%;
+}
+
+
+.event-main p{
+	margin-top: 2em;
+	font-size: 0.8em;
+}
+footer{
+	text-align: center;
+	margin-bottom: 3em;
+}
+footer div{
+	margin-bottom: 1em;
+}
+.contactinfo p{
+	font-size: 0.8em;
+}
+.P-footer p{
+  font-size: 1em;
+  font-weight: bold;
+}
+.contactlink a{
+	color: black;
+	text-decoration: none;
+}
