@@ -211,6 +211,14 @@ color: black;
     display: flex;
     justify-content: space-between;
     margin: 4% 15% 0 15%;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
     padding-top: 0.8em;
+}
+.form_area{
+	  margin: auto;
+		margin-bottom: 5rem;
+}
+* {
+    box-sizing: border-box;
+    background-color: #faf9f8;
 }
