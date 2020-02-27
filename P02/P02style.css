@@ -117,13 +117,19 @@ img:hover{
 .product-item img{
 	width:100%;
 }
-h2{
+h1{
 	text-align: center;
 	font-weight: normal;
 	margin-bottom: 5em;
 	color: #817870;
 }
+
 #HomepageH2{
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 5em;
+	color: #817870;
 	margin-bottom: 2em;
 }
 #p-category{
@@ -132,7 +138,7 @@ h2{
 	font-size: 0.8em;
 }
 
-.items p{
+.HomepageP{
 	font-size: 0.8em;
 	margin-top: 1.5em;
 }
@@ -176,4 +182,19 @@ footer div{
 .contactlink a{
 	color: black;
 	text-decoration: none;
+}
+.itemsName{
+	font-size: 0.9em;
+text-decoration: none;
+color: black;
+}
+.itemsName:hover{
+	text-decoration: underline;
+}
+.price{
+	font-size: 0.8em;
+	margin-top: 0.6em;
+}
+.itemsImage{
+	margin-bottom: 1.2em;
 }
