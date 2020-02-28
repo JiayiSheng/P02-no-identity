@@ -290,4 +290,15 @@ transition: all 1s;
     padding-bottom: 3em;
     padding-top: 0.8em;
 }
+#feedbackTo{
+	padding-bottom: 6em;
+	padding-right: 20em;
+}
+.feedback{
+	margin-left: 5em;
+}
+.feedback label{
+	color: #817870；
+	font-size:2em;
+}
 
