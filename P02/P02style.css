@@ -79,11 +79,12 @@ header h1{
 	padding:0.8em 6.2em;
 	text-decoration:none;
 	color: black;
-	transition: all 1s;
+	
 }
 .header-btn a:hover{
 	color: black;
 	background-color:#E3DCD2EE;
+	transition: all 1s;
 }
 .header-btn{
 	margin-top: 1em;
@@ -174,6 +175,7 @@ color: #817870;
 	font-size: 0.8em;
 
 }
+
 footer{
 	text-align: center;
 	margin-bottom: 3em;
@@ -207,6 +209,80 @@ color: black;
 .itemsImage{
 	margin-bottom: 1.2em;
 }
+
+
+.itemsInfor-main{
+	display: flex;
+	justify-content:space-between;
+	margin:auto;
+}
+
+.itemsInfor-left{
+	flex-basis: 30%;
+	margin:0 2rem;
+	margin-left: 15em;
+}
+.itemsInfor-left img{
+	width: 100%;
+}
+
+.itemsInforName{
+	font-size: 0.9rem;
+	color: black;
+	font-weight: bold;
+	text-align: left;
+}
+.itemsInfor-right{
+margin-right: 15em;
+	text-align: left;
+}
+
+.colorID_E7DED7{
+	background-color: #E7DED7;
+}
+.colorBlack{
+	background-color: black;
+}
+.itemsInforH2{
+	margin-top: 2em;
+	font-size: 1em;
+	color: black;
+	font-weight: normal;
+}
+.colorButton button{
+  margin-top: 1em;
+  width:30px;
+  height:30px;
+  cursor: pointer;
+  border:1px solid white;
+  box-shadow: 0 1px 2px #ddd;
+  outline:none;
+}
+.itemDescribe{
+	font-size: 0.8em;
+	margin-top: 2em;
+	color: #666;
+}
+
+
+.addToCart{
+	margin-top: 4em;
+}
+.addToCart a{
+
+	background-color:#333;
+	padding:0.8em 6.2em;
+	text-decoration:none;
+	color: #FFF;
+
+}
+
+.addToCart a:hover{
+background-color: #333333AA;
+transition: all 1s;
+}
+
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -214,6 +290,7 @@ color: black;
     padding-bottom: 5em;
     padding-top: 0.8em;
 }
+<<<<<<< HEAD
 .form_area{
 	  margin: auto;
 		margin-bottom: 5rem;
@@ -222,3 +299,6 @@ color: black;
     box-sizing: border-box;
     background-color: #faf9f8;
 }
+=======
+
+>>>>>>> master
