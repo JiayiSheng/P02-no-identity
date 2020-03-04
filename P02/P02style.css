@@ -5,6 +5,7 @@
 	padding: 0em;
 	margin: 0em;
 }
+
 body{
 	background-color: #F5F5F5;
 }
@@ -73,22 +74,7 @@ header h1{
 	font-weight: normal;
 
 }
-.header-btn a{
-	background-color:white;
 
-	padding:0.8em 6.2em;
-	text-decoration:none;
-	color: black;
-	
-}
-.header-btn a:hover{
-	color: black;
-	background-color:#E3DCD2EE;
-	transition: all 1s;
-}
-.header-btn{
-	margin-top: 1em;
-}
 
 .sectionbox{
 	margin: 5em 3em 4em 3em;
@@ -281,7 +267,27 @@ margin-right: 15em;
 background-color: #333333AA;
 transition: all 1s;
 }
+/*--------------Begin - Check out page--------------*/
+.checkout-billing{
 
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	width: 40%;
+}
+	.checkout-billing input{
+		margin-left: 2em;
+		padding-left: 10em;
+		padding-bottom: 1em;
+	}
+.checkout-h3 {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: -1em;
+}
 
 .container {
     display: flex;
@@ -289,16 +295,76 @@ transition: all 1s;
     margin: 4% 15% 0 15%;
     padding-bottom: 5em;
     padding-top: 0.8em;
+
 }
+.checkout-h4{
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.checkout-detail {
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	width: 40%;
+}
+
+.checkout-detail input{
+	margin-left: 2em;
+	padding-left: 10em;
+	padding-bottom: 1em;
+}
+
+	.checkout-billing input {
+		background-color: #eee;
+		margin-top: 0.35em;
+
+	}
+	.checkout-detail input {
+		background-color: #eee;
+		margin-top: 0.35em;
+
+	}
+
+	.checkout-detail input:hover {
+
+	    border-width: 2px;
+	    background-color: rgba(255, 255, 255, 0.9);
+	    border-color: rgba(30, 35, 30, 0.6)
+	}
+
+	.checkout-billing input:hover {
+
+	    border-width: 2px;
+	    background-color: rgba(255, 255, 255, 0.9);
+	    border-color: rgba(30, 35, 30, 0.6)
+	}
+	.header-btn a{
+		background-color:white;
+
+		padding:0.8em 6.2em;
+		text-decoration:none;
+		color: black;
+
+	}
+	.header-btn a:hover{
+		color: black;
+		background-color:#E3DCD2EE;
+		transition: all 1s;
+	}
+	.header-btn{
+		margin-top: 1em;
+		text-align: center;
+	}
 <<<<<<< HEAD
-.form_area{
-	  margin: auto;
-		margin-bottom: 5rem;
-}
-* {
-    box-sizing: border-box;
-    background-color: #faf9f8;
-}
+
+
 =======
 
+
+
+}
 >>>>>>> master
