@@ -35,44 +35,62 @@
     <a href="productListing.html" class="itemsName">LEATHER TOTE BAG</a>
     <p class="price">$134</p>
   </div>
-
 </section>
 
   <!-- Built based on https://learn.shayhowe.com/html-css/building-forms/ -->
 
 <section class="sectionbox">
-  <h3>Check Out</h3>
+  <h3 class="checkout-h3">CHECK OUT</h3>
 
-    <div class="form_area">
-      <div class="input_box">
-        <label for="user_name" class="input_label">Name: *</label>
-        <input type = "text" id = "fullName" placeholder = "Connie Shen">
-      </div>
+    <div class="container">
+		<div class="checkout-billing">
+			<h4 class="checkout-h4">Shipping Address</h4>
+					<label for="fullName">Full Name</label>
+<br> <br>
+					<input type="text" id="fullName">
+<br> <br>
+					<label for="email">Email</label>
+<br> <br>
+					<input type="text" id="email">
+<br> <br>
+					<label for="address">Address</label>
+<br> <br>
+					<input type="text" id="address">
+<br> <br>
+					<label for="cityy">City</label>
+<br> <br>
+					<input type="text" id="city">
+<br> <br>
+					<label for="zip">Zip</label>
+<br> <br>
+					<input type="text" id="zip">
+</div>
 
-      <div class="input_box">
-        <label for="client_email" class="input_label">Email: *</label>
-        <input type = "text" id = "email" placeholder = "tianyi_s@sfu.ca">
-      </div>
+				<div class="checkout-detail">
+			<h4 class="checkout-h4">Payment</h4>
+			<label for="yourName">Name on card</label>
+<br> <br>
+			<input type="text" id="yourName">
+<br> <br>
+			<label for="cardName">Card number</label>
+<br> <br>
+			<input type="text" id="cardName">
+<br> <br>
+			<label for="expDate">Exp date</label>
+<br> <br>
+			<input type="text" id="expDate">
+<br> <br>
+			<label for="cvvNumber">CVV</label>
+<br> <br>
+			<input type="text" id="cvvNumber">
+<br> <br>
+			<label for="zipCode">Zip</label>
+<br> <br>
+			<input type="text" id="zipCode">
 
-      <div class="input_box">
-        <label for="client_address" class="input_label">Adress: *</label>
-          <input type = "text" id = "address" placeholder = "13398, 104Ave">
-      </div>
-
-      <div class="input_box">
-        <label for="client_city" class="input_label">City: *</label>
-          <input type = "text" id = "city" placeholder = "Surrey">
-      </div>
-
-      <div class="input_box">
-        <label for="client_zip" class="input_label">Zip: *</label>
-          <input type = "text" id = "zip" placeholder = "V3T1V6">
-      </div>
-
-      <div class="input_box">
-        <label for="client_card" class="input_label">Credit Card Number: *</label>
-        <input type="text" name="client_card" id="client_card" class="input_text">
-      </div>
+		</div>
+</div>
+	</div>
 
       <input type="submit" class="header-btn">
     </div>
