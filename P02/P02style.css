@@ -283,6 +283,8 @@ margin-right: 15em;
 background-color: #333333AA;
 transition: all 1s;
 }
+/*--------------Begin - Check out page--------------*/
+.checkout-billing{
 
 #applyIncart{
 	margin-top: 1em;
@@ -338,6 +340,15 @@ transition: all 1s;
     padding-top: 0.8em;
 
 }
+.checkout-h4{
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.checkout-detail {
 
 #feedbackTo{
 	padding-bottom: 6em;

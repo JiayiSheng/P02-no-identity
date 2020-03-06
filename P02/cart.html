@@ -39,41 +39,62 @@
 
   <!-- Built based on https://learn.shayhowe.com/html-css/building-forms/ -->
 
-  <form class="container">
-      <div class="input_box">
-      <label for = "fullName">Full Name</label>
-      <input type = "text" id = "fullName" placeholder = "Connie Shen">
-      <label for "email"> Email</label>
-      <input type = "text" id = "email" placeholder = "tianyi_s@sfu.ca">
-      <label for "address"> Address</label>
-      <input type = "text" id = "address" placeholder = "13398, 104Ave">
-      <label for "city"> City</label>
-      <input type = "text" id = "city" placeholder = "Surrey">
-      <label for "zip"> Zip</label>
-      <input type = "text" id = "zip" placeholder = "V3T1V6">
+<section class="sectionbox">
+  <h3 class="checkout-h3">CHECK OUT</h3>
 
+    <div class="container">
+		<div class="checkout-billing">
+			<h4 class="checkout-h4">Shipping Address</h4>
+					<label for="fullName">Full Name</label>
+<br> <br>
+					<input type="text" id="fullName">
+<br> <br>
+					<label for="email">Email</label>
+<br> <br>
+					<input type="text" id="email">
+<br> <br>
+					<label for="address">Address</label>
+<br> <br>
+					<input type="text" id="address">
+<br> <br>
+					<label for="cityy">City</label>
+<br> <br>
+					<input type="text" id="city">
+<br> <br>
+					<label for="zip">Zip</label>
+<br> <br>
+					<input type="text" id="zip">
+</div>
 
+				<div class="checkout-detail">
+			<h4 class="checkout-h4">Payment</h4>
+			<label for="yourName">Name on card</label>
+<br> <br>
+			<input type="text" id="yourName">
+<br> <br>
+			<label for="cardName">Card number</label>
+<br> <br>
+			<input type="text" id="cardName">
+<br> <br>
+			<label for="expDate">Exp date</label>
+<br> <br>
+			<input type="text" id="expDate">
+<br> <br>
+			<label for="cvvNumber">CVV</label>
+<br> <br>
+			<input type="text" id="cvvNumber">
+<br> <br>
+			<label for="zipCode">Zip</label>
+<br> <br>
+			<input type="text" id="zipCode">
 
-
-    <div class="form_area">
-      <div class="input_box">
-        <label for="user_name" class="input_label">Your Name: *</label>
-        <input type="text" name="user_name" id="user_name" class="input_text">
-      </div>
-
-      <div class="input_box">
-        <label for="client_email" class="input_label">Your Email: *</label>
-        <input type="email" name="client_email" id="client_email" class="input_text">
-      </div>
-
-      <div class="input_box">
-        <label for="client_card" class="input_label">Credit Card Number: *</label>
-        <input type="text" name="client_card" id="client_card" class="input_text">
-      </div>
+		</div>
+</div>
+	</div>
 
       <input type="submit" class="header-btn">
     </div>
-  </form>
+  </section>
 
 </body>
 </html>
