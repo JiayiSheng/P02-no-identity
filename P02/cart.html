@@ -11,69 +11,108 @@
 <body>
 
 
-  	<nav>
-  		<div class="nav-left">
-  			<a href="Homepage.html" id="logo">no identity</a>
-  			<a href="Homepage.html">HOME</a>
-  			<a href="event.html">EVENT</a>
-  			<a href="products.html">ALL PRODUCTS</a>
-  			<a href="aboutus.html" id="about">ABOUT No identity</a>
-  		</div>
-  		<div class="nav-right">
-  			<a href=""><i class="fa fa-search">SEARCH</i></a>
-  			<a href="cart.html"id="cart"><i class="fa fa-shopping-cart"></i></a>
-  		</div>
-  	</nav>
+	<nav>
+		<div class="nav-left">
+			<a href="Homepage.html" id="logo">no identity</a>
+			<a href="Homepage.html">HOME</a>
+			<a href="event.html">EVENT</a>
+			<a href="products.html">ALL PRODUCTS</a>
+			<a href="aboutus.html" id="about">ABOUT No identity</a>
+		</div>
+		<div class="nav-right">
+			<a href=""><i class="fa fa-search">SEARCH</i></a>
+			<a href="cart.html"id="cart"><i class="fa fa-shopping-cart"></i></a>
+		</div>
+	</nav>
 	<section class="sectionbox" >
-  <h2>My Cart(1)</h2>
+		<h1 id="cartH1">SHOPPING CART</h1>
+			<div class="cart-item">
+				<div class="item-image">
+					<a href="productListing.html"><img src="image/bag-2.JPG" alt=bag2></a>
+				</div>
+				<div class="item-text">
+					<a href="productListing.html"><h3>LEATHER TOTE BAG</h3></a>
+					<h4>$234</h4>
+				</div>
+			</div>
 
-  <div class="product-item">
-    <div class="items">
-      <div class="itemsImage">
-      <a href="productListing.html"><img class="imageInside" src="image/bag-2.JPG" alt="bag2"></a>
-    </div>
-    <a href="productListing.html" class="itemsName">LEATHER TOTE BAG</a>
-    <p class="price">$134</p>
-  </div>
-</section>
+			<div class="total">
+				<p>Total $234</p>
+			</div>
+		</section>
 
-  <!-- Built based on https://learn.shayhowe.com/html-css/building-forms/ -->
+		<section class="sectionbox">
+			<h2 class="checkout-h2">CHECK OUT</h2>
 
-  <form class="container">
-      <div class="input_box">
-      <label for = "fullName">Full Name</label>
-      <input type = "text" id = "fullName" placeholder = "Connie Shen">
-      <label for "email"> Email</label>
-      <input type = "text" id = "email" placeholder = "tianyi_s@sfu.ca">
-      <label for "address"> Address</label>
-      <input type = "text" id = "address" placeholder = "13398, 104Ave">
-      <label for "city"> City</label>
-      <input type = "text" id = "city" placeholder = "Surrey">
-      <label for "zip"> Zip</label>
-      <input type = "text" id = "zip" placeholder = "V3T1V6">
+			<div class="container">
+				<div class="checkout-billing">
+					<h3 class="checkout-h3">Shipping Address</h3>
+					<label for="fullName">Full Name</label>
+					<br> <br>
+					<input type="text" id="fullName">
+					<br> <br>
+					<label for="email">Email</label>
+					<br> <br>
+					<input type="text" id="email">
+					<br> <br>
+					<label for="address">Address</label>
+					<br> <br>
+					<input type="text" id="address">
+					<br> <br>
+					<label for="cityy">City</label>
+					<br> <br>
+					<input type="text" id="city">
+					<br> <br>
+					<label for="zip">Zip</label>
+					<br> <br>
+					<input type="text" id="zip">
+				</div>
 
+				<div class="checkout-detail">
+					<h3 class="checkout-h3">Payment</h3>
+					<label for="yourName">Name on card</label>
+					<br> <br>
+					<input type="text" id="yourName">
+					<br> <br>
+					<label for="cardName">Card number</label>
+					<br> <br>
+					<input type="text" id="cardName">
+					<br> <br>
+					<label for="expDate">Exp date</label>
+					<br> <br>
+					<input type="text" id="expDate">
+					<br> <br>
+					<label for="cvvNumber">CVV</label>
+					<br> <br>
+					<input type="text" id="cvvNumber">
+					<br> <br>
+					<label for="zipCode">Zip</label>
+					<br> <br>
+					<input type="text" id="zipCode">
+				</div>
+			</div>  
 
+			<div id="applyIncart">
+				<a href="cart.html">APPLY</a>
+			</div>
 
+		</section>
+	<footer>
+		<div class="P-footer">
 
-    <div class="form_area">
-      <div class="input_box">
-        <label for="user_name" class="input_label">Your Name: *</label>
-        <input type="text" name="user_name" id="user_name" class="input_text">
-      </div>
+			<p>no identity</p>
+		</div>
 
-      <div class="input_box">
-        <label for="client_email" class="input_label">Your Email: *</label>
-        <input type="email" name="client_email" id="client_email" class="input_text">
-      </div>
-
-      <div class="input_box">
-        <label for="client_card" class="input_label">Credit Card Number: *</label>
-        <input type="text" name="client_card" id="client_card" class="input_text">
-      </div>
-
-      <input type="submit" class="header-btn">
-    </div>
-  </form>
-
-</body>
-</html>
+		<div class="contactinfo">
+			<p>Tel: 236-999-999 | no@identity.com | 123 100 Ave, Surry, BC, Canada</p>
+		</div>
+		<div class="contactlink">
+			<a href="https://www.facebook.com/cos/"><i class="fa fa-facebook"></i></a>
+			<a href="https://https://www.instagram.com/cosstores/"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="citaionLink">
+			<a href="citation.html">CITATION</a>
+		</div>
+	</footer>
+	</body>
+	</html>
