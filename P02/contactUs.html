@@ -18,7 +18,7 @@
 		</a>
 	</div>
 
-	<nav  id="responsiveNav4">
+	<nav  id="responsiveNav8">
 
 		<div class="nav-left">
 
@@ -37,14 +37,32 @@
 	
 	<main>
 		<section class="sectionbox" >
-			<h2>EVENT</h2>
+			<h2>CONTACT US</h2>
 			<div class="event-main">
-				<div class="event-left">
-					<h3>Tenth anniversary</h3>
-					<p>To mark our tenth year, we present a limited edition collection that celebrates our commitment to innovation and craftsmanship.</p>
-				</div>
+				
 				<div class="event-right">
-					<img src="image/event1.jpg">
+					<img src="image/feedbackImg.jpg">
+				</div>
+				<div class="event-left">
+					<h3>Contact us if you have any questions</h3>
+					<div class="feedback">
+
+					<div class="feedback-main"> 
+						<label for="fName">Full Name</label>
+						<input type="text" id="fName" >
+						<label for="EmAd">Email Address</label>
+						<input type="text" id="EmAd" >
+				    	<label for="Sbj">Subject</label>
+						<input type="text" id="Sbj"  >
+						<label for="Msg">Your Feedback</label>
+						<input type="text" id="Msg" >
+					</div>
+
+					<div class="contact-button">
+						<a  href="contactUs.html">Submit</a>
+					</div>	
+
+				</div>
 				</div>
 			</div>
 		</section>
@@ -69,7 +87,7 @@
 	</footer>
 		<script>
 		function responsiveMenu() {
-			var x = document.getElementById("responsiveNav4");
+			var x = document.getElementById("responsiveNav8");
 
 			if (x.style.display == ""){
 				x.style.display = "block"

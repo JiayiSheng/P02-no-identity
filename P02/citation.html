@@ -4,19 +4,28 @@
 	<meta charset="utf-8">
 	<title>no identity</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway|Tajawal&display=swap" rel="stylesheet">
 	<link href="P02style.css" rel="stylesheet">
 </head>
 <body>
+<h1 class="responsiveH1">
+		no identity
+	</h1>
+	
+	<div class="menu-icon">
+		<a href="javascript:void(0);" onclick="responsiveMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
 
-
-	<nav>
+	<nav id="responsiveNav10">  
 		<div class="nav-left">
-			<a href="Homepage.html" id="logo">no identity</a>
-			<a href="Homepage.html">HOME</a>
+			<a href="Homepage.html" class="logo">no identity</a>
 			<a href="event.html">EVENT</a>
-			<a href="products.html">ALL PRODUCTS</a>
-			<a href="aboutus.html" id="about">ABOUT No identity</a>
+			<a href="products.html">ALL PRODUCTS</a>		
+			<a href="contactUs.html">CONTACT US</a>
+			<a href="aboutus.html">ABOUT No identity</a>
 		</div>
 		<div class="nav-right">
 			<a href=""><i class="fa fa-search">SEARCH</i></a>
@@ -26,15 +35,20 @@
 
 	<main>
 		<section class="sectionbox" >
-			<h1 id="citationTital">CITATION</h1>
-<div id="citationDiv">
-			<p>https://www.cosstores.com/en/women.html</p>
-			<p>https://fontawesome.com/icons?d=gallery</p>
-			<p>https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway|Tajawal&display=swap</p>
-			<p>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css</p>
-<p>https://fontawesome.com/icons/shopping-cart?style=solid </p>
-            
-</div>
+			<h2 id="citationTital">CITATION</h2>
+
+			<div id="citationDiv">
+				<h3>Font&Icons</h3>
+				<p>https://fontawesome.com/icons/shopping-cart?style=solid </p>
+				<p>https://fontawesome.com/icons?d=gallery</p>
+				<p>https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway|Tajawal&display=swap</p>
+				<p>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css</p>
+                <h3>Images</h3>
+				<p>https://www.cosstores.com/en/women.html</p>
+				<h3>Code</h3>
+				<p>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form</p>
+
+			</div>
 		</section>
 
 	</main>
@@ -55,6 +69,17 @@
 			<div class="citaionLink">
 			<a href="citation.html">CITATION</a>
 		</div>
+				<script>
+		function responsiveMenu() {
+			var x = document.getElementById("responsiveNav10");
+
+			if (x.style.display == ""){
+				x.style.display = "block"
+			}else{
+				x.style.display = ""
+			}
+		}
+	</script>
 </footer>
 </body>
 </html>

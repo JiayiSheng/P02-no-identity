@@ -3,20 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<title>no identity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway|Tajawal&display=swap" rel="stylesheet">
 	<link href="P02style.css" rel="stylesheet">
 </head>
 <body>
-
-
-	<nav>
+	<h1 class="responsiveH1">
+		no identity
+	</h1>
+	<div class="menu-icon">
+		<a href="javascript:void(0);" onclick="responsiveMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<nav id="responsiveNav3">
 		<div class="nav-left">
-			<a href="Homepage.html" id="logo">no identity</a>
-			<a href="Homepage.html">HOME</a>
+			<a href="Homepage.html" class="logo">no identity</a>
 			<a href="event.html">EVENT</a>
-			<a href="products.html">ALL PRODUCTS</a>
-			<a href="aboutus.html" id="about">ABOUT no identity</a>
+			<a href="products.html">ALL PRODUCTS</a>		
+			<a href="contactUs.html">CONTACT US</a>
+			<a href="aboutus.html">ABOUT No identity</a>
 		</div>
 		<div class="nav-right">
 			<a href=""><i class="fa fa-search">SEARCH</i></a>
@@ -26,62 +33,48 @@
 
 	<main>
 		<section class="sectionbox" >
-			<h1>no identity</h1>
+			<h2>About Us</h2>
 			<div class="event-main">
-			<div class="event-left">
-				<h2>about no identity</h2>
-				<p>At no identity, we’re aiming to designed to last, not big on trends. We want you to wear our pieces for years, even decades, to come. That’s why we source the finest materials and factories for our timeless products.<br><br>Our fashion philosophy balances innovative design with enduring style. Beauty in simplicity, function at the forefront.</p>
-			</div>
+				<div class="event-left">
+					<h3>about no identity</h3>
+					<p>At no identity, we’re aiming to designed to last, not big on trends. We want you to wear our pieces for years, even decades, to come. That’s why we source the finest materials and factories for our timeless products.<br><br>Our fashion philosophy balances innovative design with enduring style. Beauty in simplicity, function at the forefront.</p>
+				</div>
 				<div class="event-right">
 					<img src="image/aboutus.jpg">
 				</div>
 			</div>
 
-			<div class="feedback">
-
-					<div class="feedback-main"> 
-						<label for="fName">Full Name</label>
-						<br> <br>
-						<input type="text" id="fName" >
-						<br>
-
-						<label for="EmAd">Email Address</label>
-<br> <br>
-						<input type="text" id="EmAd" >
-<br>
-						<label for="Sbj">Subject</label>
-<br> <br>
-						<input type="text" id="Sbj"  >
-<br>
-						<label for="Msg">Your Feedback</label>
-<br> <br>
-						<input type="text" id="Msg" >
-					</div>
-
-					<div class="contact-button">
-						<button name="submit" class="cButton">Submit</button>
-					</div>	
-
-				</div>
+			
 		</section>
 
 	</main>
 
 	<footer>
 		<div class="P-footer">
-				<p>no identity</p>
-			</div>
+			<p>no identity</p>
+		</div>
 
-			<div class="contactinfo">
-				<p>Tel: 236-999-999 | no@identity.com | 123 100 Ave, Surry, BC, Canada</p>
-			</div>
-			<div class="contactlink">
-				<a href="https://www.facebook.com/cos/"><i class="fa fa-facebook"></i></a>
-				<a href="https://https://www.instagram.com/cosstores/"><i class="fa fa-instagram"></i></a>
-			</div>
-						<div class="citaionLink">
+		<div class="contactinfo">
+			<p>Tel: 236-999-999 | no@identity.com | 123 100 Ave, Surry, BC, Canada</p>
+		</div>
+		<div class="contactlink">
+			<a href="https://www.facebook.com/cos/"><i class="fa fa-facebook"></i></a>
+			<a href="https://https://www.instagram.com/cosstores/"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="citaionLink">
 			<a href="citation.html">CITATION</a>
 		</div>
-</footer>
+	</footer>
+	<script>
+		function responsiveMenu() {
+			var x = document.getElementById("responsiveNav3");
+
+			if (x.style.display == ""){
+				x.style.display = "block"
+			}else{
+				x.style.display = ""
+			}
+		}
+	</script>
 </body>
 </html>

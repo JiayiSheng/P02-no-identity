@@ -3,20 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<title>no identity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway|Tajawal&display=swap" rel="stylesheet">
 	<link href="P02style.css" rel="stylesheet">
 </head>
 <body>
 
+	<h1 class="responsiveH1">
+		no identity
+	</h1>
 
-	<nav>
+	<div class="menu-icon">
+		<a href="javascript:void(0);" onclick="responsiveMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<nav id="responsiveNav2">
+		
 		<div class="nav-left">
-			<a href="Homepage.html" id="logo">no identity</a>
-			<a href="Homepage.html">HOME</a>
+			<a href="Homepage.html" class="logo">no identity</a>
 			<a href="event.html">EVENT</a>
-			<a href="products.html">ALL PRODUCTS</a>
-			<a href="aboutus.html" id="about">ABOUT No identity</a>
+			<a href="products.html">ALL PRODUCTS</a>		
+			<a href="contactUs.html">CONTACT US</a>
+			<a href="aboutus.html">ABOUT No identity</a>
 		</div>
 		<div class="nav-right">
 			<a href=""><i class="fa fa-search">SEARCH</i></a>
@@ -26,13 +37,14 @@
 
 	<main>
 		<section class="sectionbox" >
-			<h1 id="HomepageH2">PRODUCTS</h1>
+
+			<h2>PRODUCTS</h2>
 
 			<div class="product-item">
 				<div class="items">
 					<div class="itemsImage">
-					<a href="productListing.html"><img class="imageInside" src="image/bag-2.JPG" alt="LINEN JACKET"></a>
-				</div>
+						<a href="productListing.html"><img class="imageInside" src="image/bag-2.JPG" alt="LINEN JACKET"></a>
+					</div>
 					<a href="productListing.html" class="itemsName">COTTON-LINEN JACKET WITH DRAPED FRONT</a>
 					<p class="price">$234</p> 
 
@@ -40,25 +52,19 @@
 
 				<div class="items">
 					<div class="itemsImage">
-					<a href="productListing.html"><img class="imageInside" src="image/hooded-1.JFIF" alt="hooded"></a>
-				</div>
-					<a href="productListing.html" class="itemsName">HOODED COTTON COAT</a>
+						<a href="productListing2.html"><img class="imageInside" src="image/hooded-1.JFIF" alt="hooded"></a>
+					</div>
+					<a href="productListing2.html" class="itemsName">HOODED COTTON COAT</a>
 					<p class="price">$225</p> 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 				</div>
 
 				<div class="items">
-						<div class="itemsImage">
-						<a href="productListing.html"><img src="image/shirt-1.JFIF" alt="OVERSIZED ORGANIC COTTON T-SHIR"></a>
-						</div>
-						<a href="productListing.html" class="itemsName">OVERSIZED ORGANIC COTTON T-SHIRT</a>
-						<p class="price">$49</p>
+					<div class="itemsImage">
+						<a href="productListing3.html"><img src="image/shirt-1.JFIF" alt="OVERSIZED ORGANIC COTTON T-SHIR"></a>
+					</div>
+					<a href="productListing3.html" class="itemsName">OVERSIZED ORGANIC COTTON T-SHIRT</a>
+					<p class="price">$49</p>
 				</div>
 			</div>
 
@@ -69,19 +75,30 @@
 
 	<footer>
 		<div class="P-footer">
-				<p>no identity</p>
-			</div>
+			<p>no identity</p>
+		</div>
 
-			<div class="contactinfo">
-				<p>Tel: 236-999-999 | no@identity.com | 123 100 Ave, Surry, BC, Canada</p>
-			</div>
-			<div class="contactlink">
-				<a href="https://www.facebook.com/cos/"><i class="fa fa-facebook"></i></a>
-				<a href="https://https://www.instagram.com/cosstores/"><i class="fa fa-instagram"></i></a>
-			</div>
-						<div class="citaionLink">
+		<div class="contactinfo">
+			<p>Tel: 236-999-999 | no@identity.com | 123 100 Ave, Surry, BC, Canada</p>
+		</div>
+		<div class="contactlink">
+			<a href="https://www.facebook.com/cos/"><i class="fa fa-facebook"></i></a>
+			<a href="https://https://www.instagram.com/cosstores/"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="citaionLink">
 			<a href="citation.html">CITATION</a>
 		</div>
-</footer>
+	</footer>
+	<script>
+		function responsiveMenu() {
+			var x = document.getElementById("responsiveNav2");
+
+			if (x.style.display == ""){
+				x.style.display = "block"
+			}else{
+				x.style.display = ""
+			}
+		}
+	</script>
 </body>
 </html>

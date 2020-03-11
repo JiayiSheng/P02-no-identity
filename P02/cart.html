@@ -4,20 +4,30 @@
 <head>
 	<meta charset="utf-8">
 	<title>no identity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway|Tajawal&display=swap" rel="stylesheet">
 	<link href="P02style.css" rel="stylesheet">
 </head>
 <body>
+<h1 class="responsiveH1">
+		no identity
+	</h1>
+	
+	<div class="menu-icon">
+		<a href="javascript:void(0);" onclick="displayMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
 
+	<nav id="responsiveNav6">  
 
-	<nav>
 		<div class="nav-left">
-			<a href="Homepage.html" id="logo">no identity</a>
-			<a href="Homepage.html">HOME</a>
+			<a href="Homepage.html" class="logo">no identity</a>
 			<a href="event.html">EVENT</a>
-			<a href="products.html">ALL PRODUCTS</a>
-			<a href="aboutus.html" id="about">ABOUT No identity</a>
+			<a href="products.html">ALL PRODUCTS</a>		
+			<a href="contactUs.html">CONTACT US</a>
+			<a href="aboutus.html">ABOUT No identity</a>
 		</div>
 		<div class="nav-right">
 			<a href=""><i class="fa fa-search">SEARCH</i></a>
@@ -25,78 +35,84 @@
 		</div>
 	</nav>
 	<section class="sectionbox" >
-		<h1 id="cartH1">SHOPPING CART</h1>
-			<div class="cart-item">
-				<div class="item-image">
-					<a href="productListing.html"><img src="image/bag-2.JPG" alt=bag2></a>
-				</div>
-				<div class="item-text">
-					<a href="productListing.html"><h3>LEATHER TOTE BAG</h3></a>
-					<h4>$234</h4>
+		<h2 id="cartH2">SHOPPING CART</h2>
+		<div class="cartItem">
+			<div class="item-left">
+				<a href="productListing.html"><img src="image/bag-2.JPG" alt=bag2></a>
+			</div>
+			<div class="item-right">
+				<a href="productListing.html"><p class="cartItemName">LEATHER TOTE BAG</p></a>
+				<p class="cartItemPrice">$234</p>
+			</div>
+		</div>
+
+		<div class="total">
+			<p>Total $234</p>
+		</div>
+	</section>
+
+	<section class="sectionbox">
+		<h2 class="checkout-h2">CHECK OUT</h2>
+
+		<div class="checkout-main">
+			<div class="checkout-div2">
+				<div class="container">
+					<form action="/action_page.php">
+
+						<div class="checkout-main">
+							<div class="checkout-div">
+								<h3>Billing Address</h3>
+								<label for="fname">Full Name</label>
+								<input type="text" id="fname" name="firstname" >
+								<label for="email">Email</label>
+								<input type="text" id="email" name="email" >
+								<label for="adr">Address</label>
+								<input type="text" id="adr" name="address" >
+								<div class="checkout-main">
+									<div class="checkout-div">
+										<label for="state">State</label>
+										<input type="text" id="state" name="state" >
+									</div>
+									<div class="checkout-div">
+										<label for="zip">Zip</label>
+										<input type="text" id="zip" name="zip" >
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout-div">
+								<h3>Payment</h3>
+								<label for="cname">Name on Card</label>
+								<input type="text" id="cname" name="cardname" >
+								<label for="ccnum">Card number</label>
+								<input type="text" id="ccnum" name="cardnumber" >
+								<label for="expmonth">Exp Month</label>
+								<input type="text" id="expmonth" name="expmonth" >
+
+								<div class="checkout-main">
+									<div class="checkout-div">
+										<label for="expyear">Exp Year</label>
+										<input type="text" id="expyear" name="expyear">
+									</div>
+									<div class="checkout-div">
+										<label for="cvv">CVV</label>
+										<input type="text" id="cvv" name="cvv">
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div id="applyIncart">
+							<a href="cart.html">APPLY</a>
+						</div>
+					</form>
 				</div>
 			</div>
 
-			<div class="total">
-				<p>Total $234</p>
-			</div>
-		</section>
+		</div>
 
-		<section class="sectionbox">
-			<h2 class="checkout-h2">CHECK OUT</h2>
 
-			<div class="container">
-				<div class="checkout-billing">
-					<h3 class="checkout-h3">Shipping Address</h3>
-					<label for="fullName">Full Name</label>
-					<br> <br>
-					<input type="text" id="fullName">
-					<br> <br>
-					<label for="email">Email</label>
-					<br> <br>
-					<input type="text" id="email">
-					<br> <br>
-					<label for="address">Address</label>
-					<br> <br>
-					<input type="text" id="address">
-					<br> <br>
-					<label for="cityy">City</label>
-					<br> <br>
-					<input type="text" id="city">
-					<br> <br>
-					<label for="zip">Zip</label>
-					<br> <br>
-					<input type="text" id="zip">
-				</div>
-
-				<div class="checkout-detail">
-					<h3 class="checkout-h3">Payment</h3>
-					<label for="yourName">Name on card</label>
-					<br> <br>
-					<input type="text" id="yourName">
-					<br> <br>
-					<label for="cardName">Card number</label>
-					<br> <br>
-					<input type="text" id="cardName">
-					<br> <br>
-					<label for="expDate">Exp date</label>
-					<br> <br>
-					<input type="text" id="expDate">
-					<br> <br>
-					<label for="cvvNumber">CVV</label>
-					<br> <br>
-					<input type="text" id="cvvNumber">
-					<br> <br>
-					<label for="zipCode">Zip</label>
-					<br> <br>
-					<input type="text" id="zipCode">
-				</div>
-			</div>  
-
-			<div id="applyIncart">
-				<a href="cart.html">APPLY</a>
-			</div>
-
-		</section>
+	</section>
 	<footer>
 		<div class="P-footer">
 
@@ -114,5 +130,16 @@
 			<a href="citation.html">CITATION</a>
 		</div>
 	</footer>
-	</body>
-	</html>
+	<script>
+		function displayMenu() {
+			var x = document.getElementById("responsiveNav6");
+
+			if (x.style.display == ""){
+				x.style.display = "block"
+			}else{
+				x.style.display = ""
+			}
+		}
+	</script>
+</body>
+</html>
