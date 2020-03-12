@@ -110,7 +110,7 @@ button {
 #color2{
   padding: 3em;
   margin: 2em;
-  background-color: #F5F5F5;
+  background-color: #F2F2F2;
   width: 80%;
   border: solid #FFF 0.2em;
 }
@@ -126,14 +126,14 @@ button {
 #color4{
   padding: 3em;
   margin: 2em;
-  background-color: #D5CE95;
+  background-color: #E7DED7;
   width: 80%;
   border: solid #FFF 0.2em;
 }
 #color5{
   padding: 3em;
   margin: 2em;
-  background-color: #917870;
+  background-color: #817870;
   width: 80%;
   border: solid #FFF 0.2em;
 }
@@ -326,9 +326,13 @@ header h1{
   border-bottom: #E3DCD2EE solid 0.1em;  
 }
 
-img:hover{ 
+.product-item  img:hover{ 
   background-color: #E1EFF2;
   opacity: 0.7; 
+}
+
+h3{
+  margin-bottom: 2em;
 }
 
 .product-item{
@@ -365,24 +369,45 @@ h2{
 .event-main{
   display:flex;
   justify-content: center;
-  padding-left: 4em;
   align-items: center;
-  margin: auto;
+  padding-top:2em;
+
+}
+
+.event-main>div{
+  flex-basis:40%;
 }
 
 .event-left{
-  flex-basis: 40%;
-  margin: 3em;
+  margin: 2em;
+  max-width: 400px;
+  line-height: 180%;
+  color: #817870;
 }
 
 .event-right img{
   width:80%;
+
+}
+.event-right{
+  margin-left:15em;
 }
 
-
 .event-main p{
-  margin-top: 2em;
+  margin-top: 4em;
   font-size: 0.8em;
+  color: black;
+
+}
+
+@media  only screen and (max-width: 800px) {
+  .event-main{
+    flex-direction: column;
+  }
+  .contactinfo{
+    width: 80%;
+    margin: auto;
+  }
 }
 footer{
   text-align: center;
@@ -406,86 +431,356 @@ footer div{
   padding-right: 2em;
 }
 
-.cart-main {
-  margin: 4% 20% 0 20%;
-  position: relative;
-}
+.contact-button{
+    margin-top: 3em;
+    width: 100%;
+    text-align: center;
+  }
 
-.cart-title {
-  margin-top: 4%;
-  margin-bottom:1rem;
+#buttonA{
+  color: #FFF;
 }
+  .contact-button a{
 
-.cart-title h3 {
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 2em;
-  margin-bottom: 0em;
-  text-align: left;
-  color: #817870;
-}
+    background-color:#333;
+    padding:0.8em 6.2em;
+    text-decoration:none;
+    color: #FFF;
 
-.cart-item {
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  margin-top: 4%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 3% 10%;
-}
+  }
 
-.cart-item>div {
-  width: 40%;
-}
-
-.item-image img {
-  width: 50%;
-}
-
-.item-text {
-  display: block;
-}
-
-.item-text a {
-  text-decoration: none;
-  color: black;
-  transition: 0.3s;
-}
-
-.item-text a:hover {
-  color: rgba(0,0,0,0.7);
-  text-decoration: underline;
-  transition: 0.3s;
-}
-
-.itemsName {
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.itemPrice {
-  font-size: 14px;
-}
-
-.total {
-  margin-top: 3%;
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.totalPrice{
-  font-size: 15px;
- 
-  margin-left: 5%;
-  margin-bottom: 4%;
-  font-style: normal;
-}
+  .contact-button a:hover{
+    background-color: #333333AA;
+    transition: all 1s;
+  }
 
 
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+#cartH2{
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 2em;
+  color: black;}
+
+  .cart-title {
+    margin-top: 4%;
+    margin-bottom:1rem;
+  }
+
+  .cart-title h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    text-align: left;
+  }
+  .total p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 5%;
+    margin-bottom: 4%;
+  }
+  .cartItem {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    border-top: 1px solid black;
+    padding: 3% 10%;
+  }
+
+  .cartItem>div {
+    width: 40%;
+  }
+
+  .item-left img {
+    width: 40%;
+  }
+
+  .item-right {
+    display: block;
+  }
+
+  .item-right a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .item-right a:hover {
+    text-decoration: underline;
+  }
+
+  .cartItemName {
+    font-size:0.9em ;
+  }
+
+  .cartItemPrice {
+    font-size: 0.8em;
+    margin-top: 1em;
+  }
+
+  .checkout-h2{
+    margin-bottom: 2em;
+  }
+
+  .checkout-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+
+  .checkout-main>div{
+    flex-basis:40%;
+  }
+
+  .checkout-div {
+    -ms-flex: 50%;
+    flex: 50%;
+  }
+
+  .checkout-div h3{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .checkout-div2 {
+    -ms-flex: 75%;
+    flex: 75%;
+  }
+
+  .checkout-div,
+  .checkout-div2 {
+    padding: 0 16px;
+  }
+
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  input[type=text] {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+#applyIncart{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#applyIncart a{
+  background-color:#333;
+  padding:0.8em 6.2em;
+  text-decoration:none;
+  color: #FFF;
+}
+
+#applyIncart a:hover{
+  background-color: #333333AA;
+  transition: all 1s;
+}
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+
+    #cartH2{
+      margin-top: 1.5em;
+      margin-left: 1em;
+    }
+    .cartItem {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .sectionbox {
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 2em;
+    }
+
+    .item-left img {
+      width: 80%;
+      margin: auto;
+    }
+    .cartItemName{
+      margin-top: 1em;
+    }
+
+    .cartItem>div {
+      width: 100%;
+    }
+    .checkout-main {
+      flex-direction: column-reverse;
+      width: 90%;
+      margin: auto;
+    }
+    input[type=text] {
+      width: 80%;
+    }
+  }
+
+  @media  only screen and (max-width: 800px) {
+    .product-item{
+      display: flex;
+      flex-direction:column;
+    }
+    #citationDiv{
+      margin: auto;
+      margin-left: 1em;
+    }
+  }
+
+  .item-image img {
+    width: 60%;
+  }
+
+  .item-text {
+    display: block;
+  }
+
+  .item-text a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+  }
+
+  .item-text a:hover {
+    color: rgba(0,0,0,0.7);
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+
+  .item-text h3 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .item-text h4 {
+    font-size: 14px;
+  }
+.itemsName{
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+}
+.itemsName:hover{
+  text-decoration: underline;
+}
+.price{
+  font-size: 0.8em;
+  margin-top: 0.6em;
+}
+.itemsImage{
+  margin-bottom: 1.2em;
+}
+
+
+.itemsInfor-main{
+  display: flex;
+  justify-content:center;
+}
+
+.itemsInfor-left{
+  flex-basis: 40%;
+  text-align:center;
+}
+
+.itemsInfor-right{
+  flex-basis: 40%;
+}
+
+
+.itemsInfor-left img{
+  width: 80%;
+}
+
+.itemsInforName{
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+
+.itemDescribe p{
+  margin-bottom: 1em;
+}
+
+@media  only screen and (max-width: 800px) {
+  .itemsInfor-main{
+    flex-direction: column;
+    margin:2em;
+  }
+  .itemsInfor-right{
+    margin-top: 2em;
+  }
+}
+
+.colorID_E7DED7{
+  background-color: #E7DED7;
+}
+
+.colorID_F2F2F2{
+  background-color: #F2F2F2;
+}
+
+.itemsInforColor{
+  margin-top: 2em;
+  font-size: 1em;
+  color: black;
+  font-weight: normal;
+}
+
+.colorButton button{
+  margin-top: 1em;
+  width:30px;
+  height:30px;
+  cursor: pointer;
+  border:1px solid white;
+  box-shadow: 0 1px 2px #ddd;
+  outline:none;
+}
+
+.itemDescribe{
+  font-size: 0.8em;
+  margin-top: 2em;
+  color: #666;
+}
+
+.addToCart{
+  margin-top: 4em;
+}
+
+.addToCart a{
+  background-color:#333;
+  padding:0.8em 8vw;
+  text-decoration:none;
+  color: #FFF;
+}
+
+.addToCart a:hover{
+  background-color: #333333AA;
+  transition: all 1s;
+}
