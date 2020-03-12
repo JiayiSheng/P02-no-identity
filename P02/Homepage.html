@@ -13,20 +13,20 @@
 	<h1 class="responsiveH1">
 		no identity
 	</h1>
-	
+
 	<div class="menu-icon">
 		<a href="javascript:void(0);" onclick="responsiveMenu()">
 			<i class="fa fa-bars"></i>
 		</a>
 	</div>
 
-	<nav id="responsiveNav">  
+	<nav id="responsiveNav">
 
 		<div class="nav-left" >
 
-			<a href="Homepage.html" class="logo">no identity</a>	
+			<a href="Homepage.html" class="logo">no identity</a>
 			<a href="event.html">EVENT</a>
-			<a href="products.html">ALL PRODUCTS</a>		
+			<a href="products.html">ALL PRODUCTS</a>
 			<a href="contactUs.html">CONTACT US</a>
 			<a href="aboutus.html">ABOUT No identity</a>
 		</div>
@@ -35,36 +35,38 @@
 			<a href="cart.html"id="cart"><i class="fa fa-shopping-cart"></i></a>
 		</div>
 	</nav>
-	<header>
+	<header id="headerHome">
 		<div><h2 id="HomepageH2">The seasonal shift</h2></div>
 		<div><p>Lightweight layering for brighter days ahead
 		</p></div>
-		<div class="header-btn"><a href="">PRODUCTS LIST</a></div>
+		<div class="header-btn"><a href="products.html">PRODUCTS LIST</a></div>
 
 	</header>
 	<main>
-		<section class="sectionbox" >
-			<h3 id="HomepageH3">OUR COLLECTIONS</h3>
-			<p id="p-category">Our fashion philosophy balances innovative design with enduring style. Beauty in simplicity, function at the forefront.</p>
-			<div class="product-item">
-				<div class="items">
-					<img src="image/list5.jpg" alt="item5">
-					<p class="HomepageP">KNITTED COTTON JACKET</p>
+			<section class="sectionbox" >
+				<h2 id="HomepageH3">OUR COLLECTIONS</h2>
+				<p id="p-category">Our fashion philosophy balances innovative design with enduring style. Beauty in simplicity, function at the forefront.</p>
+				<div class="product-item">
+					<div class="items">
+						<a href="productListing.html"><img class="imageInside" src="image/bag-2.JPG" alt="LINEN JACKET"></a>
+						<p>LEATHER TOTE BAG</p>
+					</div>
+
+					<div class="items">
+						<a href="productListing2.html"><img class="imageInside" src="image/hooded-1.JFIF" alt="hooded"></a>
+						<p>HOODED COTTON COAT </p>
+					</div>
+
+					<div class="items">
+						<a href="productListing3.html"><img src="image/shirt-1.JFIF" alt="OVERSIZED ORGANIC COTTON T-SHIR"></a>
+						<p>OVERSIZED ORGANIC COTTON T-SHIRT</p>
+					</div>
 				</div>
 
-				<div class="items">
-					<img src="image/list3.jpg" alt="item3">
-					<p class="HomepageP">COTTON SEERSUCKER SHIRT </p>
-				</div>
 
-				<div class="items">
-					<img src="image/list6.jpg" alt="item6">
-					<p class="HomepageP">LONG SLEEVELESS CARDIGAN</p>
-				</div>
-			</div>
-		</section>
+			</section>
 
-	</main>
+		</main>
 
 	<footer>
 		<div class="P-footer">
@@ -84,15 +86,15 @@
 	</footer>
 
 	<script>
-		function responsiveMenu() {
-			var x = document.getElementById("responsiveNav");
+	function responsiveMenu() {
+		var x = document.getElementById("responsiveNav");
 
-			if (x.style.display == ""){
-				x.style.display = "block"
-			}else{
-				x.style.display = ""
-			}
+		if (x.style.display == ""){
+			x.style.display = "block"
+		}else{
+			x.style.display = ""
 		}
+	}
 	</script>
 </body>
 </html>
