@@ -81,12 +81,6 @@ nav a:hover{
 	text-decoration: none;
 }
 
-#cart,#about{
-	border: none;
-}
-#cart{
-	font-size: 1em;
-}
 
 
 @media  only screen and (max-width: 800px) {
@@ -151,8 +145,9 @@ nav a:hover{
 		margin-right: 1em;
 	}
 }
-
+/*-----begin - home page-----*/
 header{
+	/*.homepage background image{*/
 	background-image: url("image/bgimg.jpg");
 	background-size:cover;
 	background-position: center center;
@@ -243,7 +238,25 @@ header h1{
 	margin-bottom:2em;
 
 }
-
+footer{
+	text-align: center;
+	margin-bottom: 3em;
+}
+footer div{
+	margin-bottom: 1em;
+}
+.contactinfo p{
+	font-size: 0.8em;
+}
+.P-footer p{
+	font-size: 1em;
+	font-weight: bold;
+}
+.contactlink a{
+	color: black;
+	text-decoration: none;
+}
+/*-----begin - event page-----*/
 .event-main{
 	display:flex;
 	justify-content: center;
@@ -285,24 +298,7 @@ header h1{
 	}
 }
 
-footer{
-	text-align: center;
-	margin-bottom: 3em;
-}
-footer div{
-	margin-bottom: 1em;
-}
-.contactinfo p{
-	font-size: 0.8em;
-}
-.P-footer p{
-	font-size: 1em;
-	font-weight: bold;
-}
-.contactlink a{
-	color: black;
-	text-decoration: none;
-}
+
 .itemsName{
 	font-size: 0.9em;
 	text-decoration: none;
@@ -390,7 +386,13 @@ footer div{
 	margin-top: 2em;
 	color: #666;
 }
-
+/*-------begin - cart page--------*/
+#cart,#about{
+	border: none;
+}
+#cart{
+	font-size: 1em;
+}
 .addToCart{
 	margin-top: 4em;
 }
